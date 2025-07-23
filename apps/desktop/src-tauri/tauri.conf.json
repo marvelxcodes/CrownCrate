@@ -4,18 +4,22 @@
   "version": "0.1.0",
   "identifier": "com.crowncrate.app",
   "build": {
-    "beforeDevCommand": "bun run dev",
+    "beforeDevCommand": "bun vite",
     "devUrl": "http://localhost:1420",
-    "beforeBuildCommand": "bun run build",
     "frontendDist": "../dist"
   },
   "app": {
     "windows": [
       {
-        "title": "crowncrate",
-        "width": 800,
-        "height": 600
-      }
+        "label": "main",
+        "title": "CrownCrate",
+        "url": "http://localhost:1420",
+        "resizable": true,
+        "width": 900,
+        "height": 600,
+        "transparent": true,
+        "decorations": false
+        }
     ],
     "security": {
       "csp": null

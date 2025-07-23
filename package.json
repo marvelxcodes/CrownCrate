@@ -4,6 +4,8 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
+    "dev:mobile": "turbo run dev --filter=@crowncrate/mobile",
+    "dev:desktop": "turbo run dev --filter=@crowncrate/desktop",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types"
